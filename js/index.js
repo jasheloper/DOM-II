@@ -49,6 +49,8 @@ aNavLink[3].addEventListener('mouseleave', (event) => {
 
 
 
+
+
 // paragraphs 
 theP[0].addEventListener ('click', (event) => {
     event.target.style.backgroundColor = 'yellow'; 
@@ -59,10 +61,10 @@ theP[1].addEventListener ('copy', (event) => {
 });
 
 
-// images
-mapImg[0].addEventListener ('mousemove', (event) => {
-  event.target.style.width = '1%';
-}
+// // images
+// mapImg[0].addEventListener ('mousemove', (event) => {
+//   event.target.style.width = '1rem';
+// }
 
 
 
