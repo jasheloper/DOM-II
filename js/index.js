@@ -4,10 +4,13 @@
 // create 10 unique event listeners. using your creativity to make the Fun Bus site more interactive. 
 
 
-const theImages = document.getElementsByTagName('img');
-const theHeader = document.querySelectorAll('header');
-const theWelcome = document.querySelector('h2');
-const buttonAction = document.querySelectorAll('.btn')
+const theImages = document.getElementsByTagName('img'); // click
+const theHeader = document.querySelectorAll('header'); // mouseover
+const buttonAction = document.querySelectorAll('.btn'); // double click
+const theWelcome = document.querySelector('h2'); // mouse enter and mouse leave
+
+
+
 
 
 
@@ -22,11 +25,14 @@ theHeader[0].addEventListener ('mouseover', (event) => {
     event.target.style.backgroundImage = "url('https://nadamoo.com/wp-content/uploads/2018/10/blue-texture-bg.jpg')";
     event.target.style.color = 'white';
   });
-  
 
- theWelcome.addEventListener ('blur', (event) => {
-     event.target.style.fontSize = '30px';
- });
+
+
+theWelcome.addEventListener('dblclick', (event) => {
+    event.target.style.color = 'red';
+    event.target.style.fontSize = '50px';
+});
+
 
 
  buttonAction[0].addEventListener('mouseenter', (event) => {
